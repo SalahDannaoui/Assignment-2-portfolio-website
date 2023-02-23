@@ -1,0 +1,266 @@
+:root {
+    --border: rebeccapurple;
+    --header-size: 200px;
+}
+
+
+* {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+nav {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    background-color: var(--border);
+    color: white;
+}
+
+h1 {
+    position: absolute;
+    top: 23%;
+    left: 43%;
+    color: white;
+    font-size: 200%;
+}
+
+nav a {
+
+    align-content: center;
+    padding: 1%;
+    color: white;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+    cursor: grab;
+}
+
+header {
+    height: var(--header-size);
+    width: 100%;
+    justify-content: space-between;
+}
+
+header p {
+    background-color: greenyellow;
+    font-size: 150%;
+    z-index: 2;
+    position: relative;
+    align-content: center;
+    height: 66px;
+    left: -5px;
+    padding: 1%;
+    bottom: -5%;
+}
+
+#profile-pic {
+    z-index: 1;
+    border-radius: 50%;
+    position: relative;
+    object-fit: contain;
+    height: var(--header-size);
+}
+
+
+#backgr-pic {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: var(--header-size);
+}
+
+
+section {
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+section h2 {
+    width: 20%;
+    font-size: 200%;
+    justify-content: flex-end;
+    align-content: flex-start;
+    padding: 1%;
+
+}
+
+.section_content {
+    width: 75%;
+    border-left: 5px;
+    border-left-color: greenyellow;
+    border-left-style: groove;
+    padding: 1%;
+
+}
+
+#contact .section_content {
+    
+    justify-content: space-between;
+   
+    align-content: center;
+}
+
+#contact a {
+    align-content: center;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    cursor: grab;
+}
+
+
+.project-item {
+    width: 48%;
+    height: 247px;
+    border-style: solid;
+    border-color: var(--border);
+    margin: 1%;
+    /* padding: 1%; */
+    flex-direction: column;
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 0.4;
+}
+
+.project-item:hover {
+    cursor: grab;
+    box-shadow: 0px 0px 15px silver;
+    border-style: dotted;
+}
+
+.project-item:hover img {
+    opacity: 1;
+}
+
+
+#work-img1 {
+    height: 710px;
+    width: 100%;
+}
+
+.img-title {
+    width: auto;
+    height: auto;
+    background-color: greenyellow;
+    position: relative;
+    z-index: 1;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1%;
+    bottom: -60%;
+    left: -100%;
+}
+
+.img-title h3 {
+    font-size: 150%;
+    padding-bottom: 5px;
+}
+
+#work-img1 .img-title {
+    bottom: -73%;
+}
+
+#work-img1 h3 {
+    font-size: 200%;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+
+  }
+  
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    header p {
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 51%;
+        right: 66%;
+        width: auto;
+        height: auto;
+    }
+
+    nav {
+        height: auto;
+    }
+
+    nav a {
+        width: 100%;
+        height: 50px;
+        align-content: center;
+        justify-content: center;
+    }
+
+    nav a:hover {
+        box-shadow: 0 0 20px 20px chartreuse;
+    }
+
+    nav h1 {
+        position: unset;
+        width: 100%;
+        justify-content: center;
+        color: white;
+        padding-top: 1%;
+    }
+    .project-item {
+        width: 100%;
+    }
+
+    .section_content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 6%;
+        margin: 2%;
+    }
+
+    section h2 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact a {
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+    }
+
+    #contact a:hover {
+        box-shadow: 0 0 20px 20px var(--border);
+    }
+
+  }
+  
+
+@media screen and (max-width: 576px) {
+
+  }
